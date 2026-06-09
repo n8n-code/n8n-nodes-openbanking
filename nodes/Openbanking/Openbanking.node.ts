@@ -8,14 +8,14 @@ import { cccDescription } from './resources/ccc';
 
 export class Openbanking implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'openbanking',
+		displayName: 'Openbanking',
 		name: 'N8nDevOpenbanking',
 		icon: { light: 'file:./openbanking.png', dark: 'file:./openbanking.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
 		description: 'Latest Swagger specification for OpenData',
-		defaults: { name: 'openbanking' },
+		defaults: { name: 'Openbanking' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],

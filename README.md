@@ -53,14 +53,53 @@ That's it. No configuration files. No code. It just works.
 
 ## Resources
 
-| Resource | Operations |
-|----------|------------|
-| Branch | Get branches, Head branches |
-| ATM | Get atms, Head atms |
-| PCA | Get personal current accounts, Head personal current accounts |
-| BCA | Get business current accounts, Head business current accounts |
-| SME | Get unsecured sme loans, Head unsecured sme loans |
-| CCC | Get commercial credit cards, Head commercial credit cards |
+<details>
+<summary><b>Branch</b> (2 operations)</summary>
+
+- Get Branches
+- Head Branches
+
+</details>
+
+<details>
+<summary><b>ATM</b> (2 operations)</summary>
+
+- Get Atms
+- Head Atms
+
+</details>
+
+<details>
+<summary><b>PCA</b> (2 operations)</summary>
+
+- Get Personal Current Accounts
+- Head Personal Current Accounts
+
+</details>
+
+<details>
+<summary><b>BCA</b> (2 operations)</summary>
+
+- Get Business Current Accounts
+- Head Business Current Accounts
+
+</details>
+
+<details>
+<summary><b>SME</b> (2 operations)</summary>
+
+- Get Unsecured Sme Loans
+- Head Unsecured Sme Loans
+
+</details>
+
+<details>
+<summary><b>CCC</b> (2 operations)</summary>
+
+- Get Commercial Credit Cards
+- Head Commercial Credit Cards
+
+</details>
 
 ---
 

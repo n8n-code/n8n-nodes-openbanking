@@ -8,7 +8,7 @@ import type {
 export class OpenbankingApi implements ICredentialType {
 	name = 'N8nDevOpenbankingApi';
 
-	displayName = 'openbanking API';
+	displayName = 'Openbanking API';
 
 	icon: Icon = { light: 'file:../nodes/Openbanking/openbanking.png', dark: 'file:../nodes/Openbanking/openbanking.dark.png' };
 
@@ -22,7 +22,7 @@ export class OpenbankingApi implements ICredentialType {
 			default: 'https://developer.openbanking.org.uk/reference-implementation/open-banking/v1.3',
 			required: true,
 			placeholder: 'https://developer.openbanking.org.uk/reference-implementation/open-banking/v1.3',
-			description: 'The base URL of your openbanking API server',
+			description: 'The base URL of your Openbanking API server',
 		},
 		{
 			displayName: 'API Key',
