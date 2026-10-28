@@ -1,7 +1,7 @@
 {
   "name": "@n8n-dev/n8n-nodes-openbanking",
-  "version": "1.0.1",
-  "description": "Latest Swagger specification for OpenData",
+  "version": "1.0.2",
+  "description": "OpenData Swagger specification",
   "license": "MIT",
   "homepage": "https://n8n-code.github.io/n8n-dev/#/n8n-nodes-openbanking",
   "keywords": [

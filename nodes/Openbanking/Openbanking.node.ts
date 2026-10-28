@@ -7,32 +7,32 @@ import { smeDescription } from './resources/sme';
 import { cccDescription } from './resources/ccc';
 
 export class Openbanking implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Openbanking',
-		name: 'N8nDevOpenbanking',
-		icon: { light: 'file:./openbanking.png', dark: 'file:./openbanking.dark.png' },
-		group: ['input'],
-		version: 1,
-		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Latest Swagger specification for OpenData',
-		defaults: { name: 'Openbanking' },
-		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
-		credentials: [
-			{
-				name: 'N8nDevOpenbankingApi',
-				required: true,
-			},
-		],
-		requestDefaults: {
-			baseURL: '={{\$credentials.url}}',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		},
-		properties: [
+        description: INodeTypeDescription = {
+                displayName: 'Openbanking',
+                name: 'N8nDevOpenbanking',
+                icon: { light: 'file:./openbanking.png', dark: 'file:./openbanking.dark.png' },
+                group: ['input'],
+                version: 1,
+                subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
+                description: 'OpenData Swagger specification',
+                defaults: { name: 'Openbanking' },
+                usableAsTool: true,
+                inputs: [NodeConnectionTypes.Main],
+                outputs: [NodeConnectionTypes.Main],
+                credentials: [
+                        {
+                                name: 'N8nDevOpenbankingApi',
+                                required: true,
+                        },
+                ],
+                requestDefaults: {
+                        baseURL: '={{\$credentials.url}}',
+                        headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                        },
+                },
+                properties: [
 		{
 			"displayName": "Resource",
 			"name": "resource",
@@ -78,6 +78,6 @@ export class Openbanking implements INodeType {
 		...bcaDescription,
 		...smeDescription,
 		...cccDescription
-		],
-	};
+                ],
+        };
 }
